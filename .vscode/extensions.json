@@ -1,0 +1,19 @@
+{
+	"recommendations": [
+		"dsznajder.es7-react-js-snippets",
+		"bradlc.vscode-tailwindcss",
+		"csstools.postcss",
+		"prisma.prisma",
+		"biomejs.biome",
+		"yusukehirao.vscode-markuplint",
+		"tamasfe.even-better-toml",
+		"usernamehw.errorlens",
+		"formulahendry.auto-rename-tag",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"VisualStudioExptTeam.intellicode-api-usage-examples",
+		"vscode-icons-team.vscode-icons",
+		"yzhang.markdown-all-in-one",
+		"donjayamanne.githistory",
+		"hediet.vscode-drawio"
+	]
+}

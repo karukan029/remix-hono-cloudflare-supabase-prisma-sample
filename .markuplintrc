@@ -1,0 +1,19 @@
+{
+  "extends": ["markuplint:recommended-react"],
+  "parser": {
+    "\\.[jt]sx?$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    "\\.[jt]sx?$": "@markuplint/react-spec"
+  },
+  "excludeFiles": [
+    "./packages/hono-backend-app/**/*",
+    "./packages/my-remix-app/app/root.tsx",
+    "./packages/my-remix-app/app/routes/_index.tsx",
+    "./packages/my-remix-app/app/utils/request.server.ts",
+    "./packages/my-remix-app/app/components/ui/card.tsx",
+    "./packages/my-remix-app/app/components/ui/command.tsx",
+    "./packages/my-remix-app/app/utils/session.server.ts",
+    "./packages/my-remix-app/app/lib/conform.ts"
+  ]
+}

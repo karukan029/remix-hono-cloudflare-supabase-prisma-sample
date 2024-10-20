@@ -1,0 +1,36 @@
+{
+  "name": "hono-backend-app",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy:wrangler": "wrangler deploy --minify src/index.ts",
+    "prisma:studio": "prisma studio",
+    "prisma:generate": "npx prisma generate",
+    "prisma:format": "npx prisma format",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "prisma:push": "npx prisma db push",
+    "prisma:seed": "node --loader ts-node/esm  --require tsconfig-paths/register prisma/seed.ts",
+    "check:fix": "pnpm biome check --write ./src",
+    "check": "pnpm biome check",
+    "tsc": "tsc --noEmit",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "lint-staged": {
+    "*.{js,ts}": ["biome check --write"]
+  },
+  "dependencies": {
+    "@hono/valibot-validator": "^0.3.1",
+    "@prisma/adapter-pg": "5.20.0",
+    "@prisma/adapter-pg-worker": "5.20.0",
+    "@prisma/client": "5.20.0",
+    "@prisma/pg-worker": "5.20.0",
+    "hono": "^4.6.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "prisma": "5.20.0",
+    "typescript": "^5.1.6",
+    "wrangler": "^3.57.2"
+  }
+}
